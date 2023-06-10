@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.explore.stackoverflow.databinding.FragmentStateFlowBinding
+import com.explore.stackoverflow.databinding.FragmentSampleBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -18,7 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SampleFragment : Fragment() {
-    private lateinit var binding: FragmentStateFlowBinding
+    private lateinit var binding: FragmentSampleBinding
     val viewModel: SampleViewModel by viewModels()
 
     override fun onCreateView(
@@ -26,7 +26,7 @@ class SampleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentStateFlowBinding.inflate(inflater)
+        binding = FragmentSampleBinding.inflate(inflater)
         return binding.root
     }
 
