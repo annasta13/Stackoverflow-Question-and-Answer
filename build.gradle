@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        compose_version = '1.1.1'
+        timber = '5.0.0'
+        hilt = '2.38.1'
+        hiltCompose = '1.0.0'
+        archCoreTesting = '2.1.0'
+        testCore = '1.4.0'
+        coreKtx = '1.7.0'
+        retrofit = '2.9.0'
+        okhttp = '5.0.0-alpha.2'
+        loggingInterceptor = '5.0.0-alpha.2'
+        serializationConverter = '0.8.0'
+        moshi = '2.9.0'
+        room = '2.5.1'
+        glide = '1.4.4'
+        pager = '0.19.0'
+        activityCompose = '1.5.0'
+        jUnit = '4.13.2'
+        extJunit = '1.1.3'
+        compose = '1.0.5'
+        materialIcon = '1.0.5'
+        accompanist = '0.19.0'
+        coroutineTest = '1.5.2'
+        coilCompose = '1.3.1'
+        robolectric = '4.6.1'
+        mockWebServer = '5.0.0-alpha.2'
+        coilGif = '1.4.0'
+        composeJunit = '1.0.4'
+        espresso = '3.4.0'
+        truth = '1.1.3'
+        mock = '1.12.0'
+    }
+
+    dependencies {
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.44'
+    }
+}
+plugins {
+    id 'com.android.application' version '8.0.1' apply false
+    id 'com.android.library' version '8.0.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+}
