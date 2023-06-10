@@ -6,7 +6,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.explore.stackoverflow.ui.answer.question76433128.SampleFragment
+import com.explore.stackoverflow.ui.answer.question76445761.Sample2Fragment
 import com.explore.stackoverflow.ui.theme.StackoverflowTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.container)
 
         val ft = this.supportFragmentManager.beginTransaction()
-        ft.replace(R.id.fragment_container, SampleFragment()).commit()
+        ft.replace(R.id.fragment_container, Sample2Fragment()).commit()
 
         /*setContent {
             StackoverflowTheme {
