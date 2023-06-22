@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.explore.stackoverflow.ui.answer.question76445761.Sample2Fragment
+import com.explore.stackoverflow.ui.main.MainFragment
 import com.explore.stackoverflow.ui.theme.StackoverflowTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -17,19 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.container)
 
         val ft = this.supportFragmentManager.beginTransaction()
-        ft.replace(R.id.fragment_container, Sample2Fragment()).commit()
-
-        /*setContent {
-            StackoverflowTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }*/
+        ft.replace(R.id.fragment_container, MainFragment()).commit()
     }
 }
 
