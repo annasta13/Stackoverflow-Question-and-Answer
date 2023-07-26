@@ -7,10 +7,8 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import com.explore.stackoverflow.databinding.FragmentQuestion3Binding
-import timber.log.Timber
 
 
 /*
@@ -19,10 +17,6 @@ import timber.log.Timber
 
 class Question3Fragment : Fragment() {
     private lateinit var binding: FragmentQuestion3Binding
-    private val settingLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            Timber.d("check result $result")
-        }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,6 +39,6 @@ class Question3Fragment : Fragment() {
         intent.action = Settings.ACTION_APPLICATION_DETAILS_SETTINGS
         val uri = Uri.fromParts("package", packageName, null)
         intent.data = uri
-        settingLauncher.launch(intent)
+        requireContext().startActivity(intent)
     }
 }
