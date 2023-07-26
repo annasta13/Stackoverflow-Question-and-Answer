@@ -1,4 +1,4 @@
-package com.explore.stackoverflow.ui.answer.question76480901
+package com.explore.stackoverflow.data
 
 data class UserSample(
     val id: Int,

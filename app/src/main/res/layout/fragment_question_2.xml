@@ -5,14 +5,14 @@
 
         <variable
             name="viewModel"
-            type="com.explore.stackoverflow.ui.answer.question76445761.Sample2FragmentViewModel" />
+            type="com.explore.stackoverflow.ui.answer.question2.Question2ViewModel" />
     </data>
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.answer.question76433128.SampleFragment">
+        tools:context=".ui.answer.question1.Question1Fragment">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

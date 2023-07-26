@@ -1,4 +1,4 @@
-package com.explore.stackoverflow.ui.answer.question76433128
+package com.explore.stackoverflow.ui.answer.question2
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,24 +6,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.explore.stackoverflow.databinding.FragmentSampleBinding
+import com.explore.stackoverflow.databinding.FragmentQuestion2Binding
 import dagger.hilt.android.AndroidEntryPoint
 
-
 /*
- * Case: https://stackoverflow.com/questions/76433128
- */
+ * Case: https://stackoverflow.com/questions/76445761
+ * */
 
 @AndroidEntryPoint
-class SampleFragment : Fragment() {
-    private lateinit var binding: FragmentSampleBinding
-    val viewModel: SampleViewModel by viewModels()
+class Question2Fragment : Fragment() {
+    private lateinit var binding: FragmentQuestion2Binding
+    private val viewModel: Question2ViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSampleBinding.inflate(inflater)
+        binding = FragmentQuestion2Binding.inflate(inflater)
         return binding.root
     }
 

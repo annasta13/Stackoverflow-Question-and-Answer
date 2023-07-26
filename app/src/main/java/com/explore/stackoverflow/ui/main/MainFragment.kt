@@ -1,11 +1,11 @@
 package com.explore.stackoverflow.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.explore.stackoverflow.R
 import com.explore.stackoverflow.data.Topic
 import com.explore.stackoverflow.databinding.FragmentMainBinding
@@ -27,9 +27,16 @@ class MainFragment : Fragment(), MainAdapter.OnItemClick {
     }
 
     override fun onClick(item: Topic) {
-        val ft = requireActivity().supportFragmentManager.beginTransaction()
-        ft.replace(R.id.fragment_container, item.fragment)
-            .addToBackStack(null)
-            .commit()
+        item.fragment?.let {
+            val ft = requireActivity().supportFragmentManager.beginTransaction()
+            ft.replace(R.id.fragment_container, it)
+                .addToBackStack(null)
+                .commit()
+        }
+
+        item.activity?.let {
+            val intent = Intent(requireActivity(), it)
+            startActivity(intent)
+        }
     }
 }

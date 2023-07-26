@@ -1,4 +1,4 @@
-package com.explore.stackoverflow.ui.answer.question76433128
+package com.explore.stackoverflow.ui.answer.question1
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class SampleViewModel @Inject constructor() : ViewModel() {
+class Question1ViewModel @Inject constructor() : ViewModel() {
     private val _state = MutableStateFlow("default")
     val state = _state.asStateFlow()
 
